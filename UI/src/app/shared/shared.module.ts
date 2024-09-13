@@ -6,6 +6,7 @@ import { PageFooterComponent } from './components/page-footer/page-footer.compon
 import { PageSidenavComponent } from './components/page-sidenav/page-sidenav.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CommonModule,MaterialModule,RouterModule
   ],
   exports:[CommonModule,MaterialModule,PageHeaderComponent,
-    PageFooterComponent,RouterModule,PageNotFoundComponent,PageSidenavComponent]
+    PageFooterComponent,RouterModule,PageNotFoundComponent
+    ,ReactiveFormsModule,PageSidenavComponent]
 })
 export class SharedModule { }
